@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip install pandas scikit-learn
+RUN pip install -r requirements.txt
 
 CMD ["python", "spam_detector.py"]
